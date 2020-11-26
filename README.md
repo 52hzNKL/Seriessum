@@ -1,1 +1,1 @@
-Seriessum
+Seriessum
