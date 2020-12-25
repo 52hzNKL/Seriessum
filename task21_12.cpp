@@ -22,19 +22,19 @@ int main()
 	}
 	while(n<1 && 100<n);
 	int a[100];
+	for(int i=0;i<n;i++)
+	{
+	    cout<<"Nhap a["<<i<<"] ";
+		cin>>a[i];
+	}
+	//Xet dieu kien nhap vao
 	if(n=1)
 	{
-	    cout<<"No";
+		cout<<"No";
 	}
 	else
 	{
 	    for(int i=0;i<n;i++)
-	    {
-	        cout<<"Nhap a["<<i<<"] ";
-		cin>>a[i];
-	     }
-	    //Xet dieu kien nhap vao
-	     for(int i=0;i<n;i++)
 	     {
 		if(a[i]!=100 && a[i]!= 200)
 		{
@@ -46,11 +46,11 @@ int main()
 	    if(tong(a, n) % 200==0 )
 	    {
 		cout<<"Yes";
-	     }
-	     else
-	     {
+	    }
+	    else
+	    {
 		cout<<"No";
-	      }
+	    }
 	}
 	return 0;
 }
