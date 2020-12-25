@@ -28,7 +28,7 @@ int main()
 		cin>>a[i];
 	}
 	//Xet dieu kien nhap vao
-	if(n=1)
+	if(n==1)
 	{
 		cout<<"No";
 	}
