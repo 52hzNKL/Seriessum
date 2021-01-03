@@ -11,9 +11,9 @@ int main()
 	char b[]="hello";
 	
 	char *p1, *p2, *p3;
-    int i=0,j=0,key=0;
-    p1 = a;
-    p2 = b;
+        int i=0,j=0,key=0;
+        p1 = a;
+        p2 = b;
 	
 	
 	if(strlen(a)<strlen(b))
