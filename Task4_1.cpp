@@ -45,10 +45,10 @@ int main()
             }
         p1++; 
         }
-    if(key==0)
-    {
-       cout<<"No";
-    }
+        if(key==0)
+        {
+             cout<<"No";
+        }
 	}
 	return 0;
 }
