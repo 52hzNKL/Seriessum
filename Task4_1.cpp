@@ -1,0 +1,67 @@
+#include<iostream>
+#include<stdio.h>
+#include<string.h>
+using namespace std;
+
+int main()
+{
+	char a[100];
+	cout<<" Nhap xau ki tu ";
+	gets(a);
+	char b[]="hello";
+	
+	char *p1, *p2, *p3;
+    int i=0,j=0,key=0,count=0;
+    p1 = a;
+    p2 = b;
+	
+	
+	if(strlen(a)<strlen(b))
+	{
+		cout<<"No";
+	}
+	else
+	{
+	    for(i = 0; i<strlen(a); i++)
+        {
+            if(*p1 == *p2)
+            {
+                p3 = p1;
+                for(j = 0 ; j<strlen(a) ; j++)
+                {
+                    if(*p3 == *p2)
+                    {
+						count++;
+                    	p3++;p2++;
+                    	if(*p2=='o')
+                    	{
+                    		break;
+						}
+                    } 
+                    else
+                    {
+                    	p3++;
+					}
+                }
+                if(count==6)
+                {
+                    key=1;
+                }
+                else
+                {
+                	key=0;
+				}
+            }
+        p1++; 
+        }
+	}
+	if(key==1)
+	{
+		cout<<"Yes";
+	}
+	else
+	{
+		cout<<"No";
+	}
+	return 0;
+}
